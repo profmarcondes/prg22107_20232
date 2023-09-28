@@ -1,0 +1,2 @@
+# This is the directory that object and dependecies files 
+# are created. It must exist to avoid errors in Makefile
