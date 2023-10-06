@@ -25,6 +25,15 @@ class Box {
             return result;
         }
 
+        bool operator<(const Box& b1){
+            return this->volume() < b1.volume();
+        }
+
+        bool operator==(const Box& b1){
+            return this->volume() == b1.volume();
+        }
+
+
         void lenght(double value) { _lenght = value; } 
         void breadth(double value) { _breadth = value; } 
         void height(double value) { _height = value; } 
@@ -69,6 +78,11 @@ int main(){
     }
 
     sort(_vector.begin(), _vector.end());
+
+    cout << "Sorted boxes" << endl;
+    for(auto box: _vector) {
+        cout << box << endl;
+    }
 
     c = a + b;
 

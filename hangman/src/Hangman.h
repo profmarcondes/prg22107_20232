@@ -14,10 +14,13 @@
 #include "Letter.h"
 #include "Player.h"
 
+class Player;
+
 using namespace std;
 
 class Hangman {
 public:
+	Hangman(): _word("undefined","undefined") {}
 	bool play(Player *p);
 
 private:
